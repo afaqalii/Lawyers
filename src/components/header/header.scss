@@ -1,0 +1,25 @@
+@import '../../assets/variables.scss';
+header {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+.header_text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 80%;
+    .header_text_heading {
+       font-size: $headerHeading;
+       letter-spacing: -5px;
+    }
+    .header_text_subHeading {
+        font-size: $headerParagragh;
+        width: 80%;
+        padding-left: 10px;
+    }
+    .header_text_btn {
+        padding-left: 10px;
+    }
+}

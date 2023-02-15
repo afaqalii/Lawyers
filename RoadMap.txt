@@ -1,0 +1,2 @@
+FOR THE BUTTON: We have the same button but just have to make the background-color padding and color dynamic
+
