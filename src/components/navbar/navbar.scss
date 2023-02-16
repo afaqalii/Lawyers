@@ -1,5 +1,4 @@
 @import "../../assets/variables.scss";
-
 nav {
     display: flex;
     align-items: center;
@@ -19,7 +18,9 @@ nav {
             justify-content: space-between;
                 li {
                 padding: 0 20px;
-
+                a {
+                    color: $white;
+                }
             }
             .nav_items_dropDown {
                 display: none;

@@ -1,0 +1,82 @@
+@import '../../assets/variables.scss';
+a {
+    color: $darkGray;
+    font-size: 16px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: $lightGray;
+    .footer_section {
+        flex-direction: column;
+        
+        .footer_copy_container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          height: 60vh;
+          width: 100%;    
+          padding: 3em 0;    
+            .footer_copy_container-content {
+                h1 {
+                    font-size: 60px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .footer_content_container {
+            color: $darkGray;
+            .footer_content_container-links {    
+                padding: 3em 0;    
+                display: flex;
+                justify-content: space-between;
+
+                h4 {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 16px;
+                }
+                li {
+                    margin-bottom: 15px;
+                }
+
+                .footer_content_contianer-links-box {
+                    .business_hours-box {
+                        .business_hours {
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 20px;
+                        }
+                    }
+                }
+                .menu-links {
+                    a {
+                        font-size: 24px;
+                    }
+                }
+
+            }
+            .footer_content_container-copyright {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 3em 0;    
+
+                p {
+                    font-size: 13px;
+                }
+                .footer_content_container-copyright-SocialIcons {
+                    display: flex;
+                    gap: 20px;
+                }
+            }
+        }
+    }
+}
