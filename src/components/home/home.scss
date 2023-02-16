@@ -3,17 +3,21 @@
 a {
     color: $white;
 }
-
+p {
+    line-height: 30px;
+    letter-spacing: 1px;
+}
 .landingPage {
   display: flex;
   flex-direction: column;
-  align-items: center;
+//   align-items: center;
 
 .container {
     display: flex;
-    width: 80%;
+    width: 70%;
 }
 .home {
+    background-color: rgba(0, 0, 0, .75);
     background:linear-gradient(0deg, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("https://images.unsplash.com/photo-1589216532372-1c2a367900d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80") no-repeat center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -97,14 +101,14 @@ a {
 
 .why_us {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 40vh;
     margin: 2em 0;
     .why_us_container {
-        width: 100%;
        .why_us_container_content {
         h1 {
+            font-size: 40px;
             margin-bottom: 20px;
           }
         .why_us_container_subcontent {
@@ -116,6 +120,157 @@ a {
           }
           
        }
+    }
+}
+.lawyers_in_number {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    .lawyers_in_number_container {
+        .lawyers_in_number_container_content { 
+            h1 {
+                font-size: 40px;
+                margin-bottom: 40px;
+            }
+          .lawyers_in_number_container_subcontent {
+            display: flex;
+            .lawyers_in_numer_container_subcontent_box {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+               h4 {
+                font-size: 80px;
+               }
+               p {
+                font-size: $headerParagragh;
+                max-width: 70%;
+               }
+            }
+        }
+    }
+    }
+}
+.free_consultation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .free_consultation_container {
+      background: url("../../assets/lawyer-handshake.jpg") no-repeat center;
+      background-size: cover;
+      height: 80vh;
+
+      .free_consultation_container-contentBox {
+          width: 100%;
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          margin: 1.5em;
+
+          .free_consultation_container-contentBox_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $lightGray;
+            text-align: left;
+            height: 40vh;
+            padding: 2em;
+            width: 50%;
+            button {
+                width: max-content;
+            }
+          }
+       }  
+    }
+}
+.companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .companies_container-logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        gap: 20px;
+        figure {
+            width: 200px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.company_copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: $darkGray;
+    .company_copy_container {
+        .company_copy_container-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            color: $white;
+            h1 {
+                width: 70%;
+                font-size: 60px;
+            }
+            p {
+                width: 70%;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+.newsBlog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    .newsBlog_container {
+        flex-direction: column;
+        h1 {
+            margin-bottom: 20px;
+        }
+        .newsBlog_container-content {
+            justify-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+            
+            .newsBlog_container-content-card {
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+
+                 figure {
+                    width: 300px;
+                    height: 200px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 7px;
+                        -webkit-border-radius: 7px;
+                        -moz-border-radius: 7px;
+                        -ms-border-radius: 7px;
+                        -o-border-radius: 7px;
+}
+                 }
+                 h3 {
+                    margin-top: 20px;
+                    padding: 20px 0;
+                 }
+                 p {
+                    line-height: 20px;
+                    letter-spacing: 0;
+                 }
+
+            }
+        }
     }
 }
 

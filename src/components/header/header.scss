@@ -1,4 +1,8 @@
 @import '../../assets/variables.scss';
+p {
+    line-height: 30px;
+    letter-spacing: 1px;
+}
 header {
     display: flex;
     height: 90vh;
