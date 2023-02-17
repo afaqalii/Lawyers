@@ -12,6 +12,7 @@ import CourtHammer from "../../assets/hammer.jpg"
 import HoldingBook from "../../assets/holding-book.jpg"
 import Signing from "../../assets/siging-paper.jpg"
 import Footer from '../footer/footer'
+import Button from '../button/button'
 const Home = () => {
   return (
     <div className='landingPage'>
@@ -65,7 +66,9 @@ const Home = () => {
             <h1>Why Us</h1>
             <div className="why_us_container_subcontent">
             <p>Our lawyers are dedicated to ensuring that you get personal attention and top-quality service for all of your legal concerns. We care about you. </p>          
-            <button>More About Us</button>
+            <div>
+            <Button content="More About us" padding="1em 2em" bg="white" color="black"/>
+            </div>
             </div>
           </div>
         </div>
@@ -103,7 +106,7 @@ const Home = () => {
             <p>
 We know it can be hard to find the right law firm. That's why we offer all new clients a free 1-hour consultation. </p>
 <p>We’ll talk about your case and find the right legal team for meeting your needs. </p>
-            <button>Book a consultation</button>
+            <Button content="Book a consultation" bg="white" color="black"/>
            </div>
         </div>
       </div>

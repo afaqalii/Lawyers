@@ -3,6 +3,7 @@ import React from 'react'
 import {FaFacebookF,FaBalanceScale } from 'react-icons/fa';
 import {BsTwitter, BsLinkedin} from "react-icons/bs"
 import "./footer.scss"
+import Button from '../button/button';
 const Footer = () => {
   return (
     <footer>
@@ -13,7 +14,7 @@ const Footer = () => {
                 <h1>“Justice delayed is justice denied.”</h1>
                 <p>William E. Gladstone</p>
                 <div className="footer_copy_container-content-btn">
-                    <button>Get In Touch</button>
+                    <Button content="Get In Touch" bg="white" color="black"/>
                 </div>
             </div>
         </div>
