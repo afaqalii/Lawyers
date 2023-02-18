@@ -225,3 +225,12 @@ nav {
         }
     }
 }
+@media (max-width:786px) {
+    nav {
+        .responsive_navbar {
+            .nav_footer {
+                gap: 30px;
+            }
+        }
+    }
+}

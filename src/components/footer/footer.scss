@@ -16,7 +16,6 @@ footer {
           justify-content: center;
           align-items: center;
           text-align: center;
-          height: 60vh;
           width: 100%;    
           padding: 3em 0;    
             .footer_copy_container-content {
@@ -78,5 +77,21 @@ footer {
                 }
             }
         }
+    }
+}
+@media (max-width:1024px) {
+    footer {
+        .footer_section {
+            .footer_content_container {
+                .footer_content_container-links {
+                    gap: 30px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:425px) {
+    .footer_content_container-links {
+        flex-direction: column;
     }
 }

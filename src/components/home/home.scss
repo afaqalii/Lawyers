@@ -74,7 +74,7 @@ p {
         .our_priority_container_img {
             position: absolute;
             top: 0;
-            right: calc(100% - 90%);
+            right: calc(100% - 95%);
             height: 70vh;
             z-index: -1;
              img {
@@ -89,9 +89,9 @@ p {
             justify-content: center;
             background-color: $lightGray;
             text-align: left;
-            height: 50vh;
             padding: 2em;
             width: 50%;
+            margin-top: 2em;
               h1 {
                 font-size: 55px;
               }
@@ -126,7 +126,6 @@ p {
 .lawyers_in_number {
     display: flex;
     justify-content: center;
-    height: 40vh;
     .lawyers_in_number_container {
         .lawyers_in_number_container_content { 
             h1 {
@@ -214,8 +213,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
     background-color: $darkGray;
+    padding: 3em 0;
+    margin: 2em 0;
     .company_copy_container {
         .company_copy_container-content {
             display: flex;
@@ -238,7 +238,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    padding: 3em 0;
+    margin: 2em 0;
     .newsBlog_container {
         flex-direction: column;
         h1 {
@@ -282,4 +283,105 @@ p {
     }
 }
 
+}
+
+@media (max-width:1024px) {
+
+    .landingPage {
+
+        .our_priority {
+            .our_priority_container {
+                .our_priority_container_content {
+                    h1 {
+                        font-size: 32px;
+                    }
+                }
+                .our_priority_container_img {
+                    right: 0%;
+                }
+            }
+        }
+
+
+        .free_consultation {
+            .free_consultation_container {
+                .free_consultation_container-contentBox {
+                    .free_consultation_container-contentBox_content {
+                        padding: 1em;
+
+                        button {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:786px) {
+  .landingPage {
+    .practical_areas {
+        .practical_areas_heading {
+            h2 {
+                font-size: 30px ;
+            }
+        }
+        .practical_areas_content {
+            .content {
+                h2 {
+                    font-size: 35px;
+                }
+            }
+            
+        }
+    }
+    .our_priority {
+        .our_priority_container {
+            .our_priority_container_img {
+                height: 50vh;
+                right: -10%;
+            }
+            .our_priority_container_content {
+                width: 60%;
+            }
+        }
+    }
+    .free_consultation { 
+        .free_consultation_container {
+            .free_consultation_container-contentBox {
+                .free_consultation_container-contentBox_content {
+                    width: 70%;
+                }
+            }
+        }
+    }
+    .company_copy {
+        .company_copy_container {
+            .company_copy_container-content {
+                h1 {
+                    width: 100%;
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+  }
+}
+@media (max-width:425px) {
+     .landingPage {
+        .container {
+            width: 100%;
+            flex-direction: column;
+            padding: 2em;
+        }
+        .practical_areas {
+            flex-direction: column;
+        }
+        .why_us_container_subcontent {
+            flex-direction: column;
+        }
+        .lawyers_in_number_container_subcontent {
+            flex-direction: column;
+        }
+     }
 }
