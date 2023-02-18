@@ -283,6 +283,50 @@ p {
 }
 
 }
+// @media (min-width:2560px) {
+//     .landingPage {
+//         .container {
+//             width: 50%;
+//         }
+//         .our_priority {
+//             .our_priority_container {
+//                 .our_priority_container_img {
+//                     height: 40vh;
+//                 }
+//                 .our_priority_container_content {
+//                     padding: 6em;
+//                 }
+//             }
+//         }
+//         .companies {
+//             .companies_container-logos {
+//                 gap: 4em;
+//             }
+//         }
+//     }
+// }
+@media (min-width:1740px) {
+    .landingPage {
+        .container {
+            width: 70%;
+        }
+        .our_priority {
+            .our_priority_container {
+                .our_priority_container_img {
+                    height: 40vh;
+                }
+                .our_priority_container_content {
+                    padding: 6em;
+                }
+            }
+        }
+        .companies {
+            .companies_container-logos {
+                gap: 4em;
+            }
+        }
+    }
+}
 
 @media (max-width:1024px) {
 
