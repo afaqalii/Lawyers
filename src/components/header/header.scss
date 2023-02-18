@@ -27,3 +27,26 @@ header {
         padding-left: 10px;
     }
 }
+@media (max-width:425px) {
+     .header_text {
+        .header_text_heading {
+            font-size: 80px;
+        }
+     }
+     p {
+        margin-bottom: 20px;
+     }
+}
+@media (max-width:425px) {
+    .header_text {
+        width: 100%;
+        padding-left: 20px;
+       .header_text_heading {
+           font-size: 60px;
+       }
+    }
+    p {
+       font-size: 1em;
+       margin-bottom: 20px;
+    }
+}

@@ -234,3 +234,26 @@ nav {
         }
     }
 }
+
+@media (max-width:425px) {
+    nav {
+        .responsive_navbar {
+           .responsive_nav_items {
+            ul {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+           }
+           .nav_footer {
+            flex-direction: column;
+            align-items: flex-start;
+              .nav_footer_links {
+                 p {
+                    margin-bottom: 0;
+                 }
+              }
+           }
+        }
+    }
+}

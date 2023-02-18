@@ -95,3 +95,18 @@ footer {
         flex-direction: column;
     }
 }
+
+@media (max-width:320px) {
+      footer {
+        .footer_section {
+            .footer_copy_container {
+                .footer_copy_container-content {
+                    h1 {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+      }
+}
+

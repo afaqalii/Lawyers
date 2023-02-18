@@ -65,7 +65,6 @@ p {
     justify-content: center;
     padding: 4em 0;
     margin: 2em 0;
-    height: 80vh;
     .our_priority_container {
         display: flex;
         align-items: center;
@@ -134,7 +133,7 @@ p {
             }
           .lawyers_in_number_container_subcontent {
             display: flex;
-            .lawyers_in_numer_container_subcontent_box {
+            .lawyers_in_number_container_subcontent_box {
             display: flex;
             flex-direction: column;
             gap: 18px;
@@ -377,11 +376,73 @@ p {
         .practical_areas {
             flex-direction: column;
         }
-        .why_us_container_subcontent {
-            flex-direction: column;
+        .our_priority {
+            .our_priority_container {
+                position: static;
+                padding: 1em 0;
+                .our_priority_container_img {
+                    position: static;
+                    width: 100%;
+                }
+                .our_priority_container_content {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+            }
         }
-        .lawyers_in_number_container_subcontent {
-            flex-direction: column;
+        .why_us {
+            .why_us_container {
+                .why_us_container_content {
+                    .why_us_container_subcontent {
+                        flex-direction: column;
+                        p {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .lawyers_in_number {
+            .lawyers_in_number_container {
+                .lawyers_in_number_container_content {
+                    .lawyers_in_number_container_subcontent {
+                        flex-direction: column;
+                         .lawyers_in_number_container_subcontent_box {
+                             p {
+                                max-width: 100%;
+                             }
+                         }
+
+                    }
+                }
+            }
+        }
+        .free_consultation {
+            .free_consultation_container {
+                .free_consultation_container-contentBox {
+                    margin: 1.5em 0;
+                    .free_consultation_container-contentBox_content {
+                        width: 100%;
+                    }
+                }
+            }
         }
      }
+}
+
+@media (max-width:320px) {
+    .landingPage {
+        .container {
+            padding: 10px;
+        }
+        .company_copy {
+            .company_copy_container {
+                .company_copy_container-content  {
+                    h1 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
 }
