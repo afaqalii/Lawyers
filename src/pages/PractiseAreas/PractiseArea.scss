@@ -1,0 +1,63 @@
+@import "../../assets/variables.scss";
+@import "../../components/home/home.scss";
+.container {
+    display: flex;
+    width: 70%;
+}
+footer {
+    a {
+        color: $darkGray;
+    }
+
+}
+.practise_area {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+     .practise_area_container {
+       display: flex;
+       justify-content: center;
+         .practise_area_container-boxes {
+            display: flex;
+            flex-direction: column;
+            .practise_area_container-box {
+                display: flex;
+                border: 2px solid black;
+               .practise_area_container-img {
+                border: 2px solid black;
+                flex: .5;
+                 figure {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                 }
+               }   
+               .practise_area_container-content {
+                border: 2px solid black;
+                flex: .5;
+                padding: 2em;
+               }
+            }
+         }
+     }
+}
+.practise_areas_header {
+    background-color: $darkGray;
+    color: $white;
+    .practise_areas_heading {
+        display: flex;
+        justify-content: center;
+        margin-top:2em;
+        padding: 2em 0;
+        .practise_areas_heading_container {
+            .practise_areas_heading_container-content {
+                padding: 2em 0;
+                h1 {
+                    font-size: 60px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

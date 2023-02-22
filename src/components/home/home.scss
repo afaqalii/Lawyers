@@ -10,11 +10,12 @@ p {
 .landingPage {
   display: flex;
   flex-direction: column;
-//   align-items: center;
-
 .container {
     display: flex;
     width: 70%;
+}
+.about_us_page_header {
+    background-color: $darkGray;
 }
 .home {
     background-color: rgba(0, 0, 0, .75);

@@ -1,0 +1,47 @@
+@import "../../assets/variables.scss";
+@import "../../components/home/home.scss";
+
+.container {
+    display: flex;
+    width: 70%;
+}
+footer {
+    a {
+        color: $darkGray;
+    }
+
+}
+
+.about_us_page_header {
+    background-color: $darkGray;
+    color: $white;
+    .about_us {
+        display: flex;
+        justify-content: center;
+        margin-top:2em;
+        padding: 2em 0;
+        .about_us_container {
+            .about_us_container-content {
+                padding: 2em 0;
+                h1 {
+                    font-size: 60px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.our_team {
+    display: flex;
+    justify-content: center;
+    figure {
+        height: 40vh;
+        width: 70%;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}

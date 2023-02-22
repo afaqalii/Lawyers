@@ -13,6 +13,8 @@ import HoldingBook from "../../assets/holding-book.jpg"
 import Signing from "../../assets/siging-paper.jpg"
 import Footer from '../footer/footer'
 import Button from '../button/button'
+import WhyUs from '../whyUs/WhyUs'
+import LawyersInNumbers from '../lawyerInNumbers/LawyersInNumbers'
 const Home = () => {
   return (
     <div className='landingPage'>
@@ -60,44 +62,14 @@ const Home = () => {
 
 
     {/* WHY US CONTIANER */}
-      <div className="why_us">
-        <div className="why_us_container container">
-          <div className="why_us_container_content">
-            <h1>Why Us</h1>
-            <div className="why_us_container_subcontent">
-            <p>Our lawyers are dedicated to ensuring that you get personal attention and top-quality service for all of your legal concerns. We care about you. </p>          
-            <div>
-            <Button content="More About us" padding="1em 2em" bg="white" color="black"/>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    
+    <WhyUs/>
+
 
     {/* 
         LAWYERS IN NUMBER CONTAINER
     */}
-    <div className="lawyers_in_number section">
-        <div className="lawyers_in_number_container container">
-          <div className="lawyers_in_number_container_content">
-            <h1>Lawyers. in numbers</h1>
-            <div className="lawyers_in_number_container_subcontent">
-              <div className="lawyers_in_number_container_subcontent_box">
-                <h4>126</h4>
-                <p>Partners, lawyers, legal assistants, and articling students, all of whom come from top institutions worldwide.</p>
-              </div>
-              <div className="lawyers_in_number_container_subcontent_box">
-              <h4>6</h4>
-                <p>Domestic locations. We have offices in some of the country's largest cities, and a couple of small ones, too.</p>
-              </div>
-              <div className="lawyers_in_number_container_subcontent_box">
-              <h4>29</h4>
-                <p>Overseas partnerships. We have  international partners in several countries providing services in key areas. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <LawyersInNumbers/>
      {/* FREE CONSULTATION CONTIANER */}
      
      <div className="free_consultation section">
@@ -145,6 +117,7 @@ We know it can be hard to find the right law firm. That's why we offer all new c
         </div>
       </div>
       
+      {/*  COMPANY NEWS AND BLOGS CONTAINER */}
       <div className="newsBlog">
         <div className="newsBlog_container container">
           <h1>News & Updates</h1>
