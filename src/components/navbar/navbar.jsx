@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, } from 'react'
 import Button from '../button/button'
 import {BsChevronDown,BsChevronUp, BsFacebook} from "react-icons/bs"
 import {GiHamburgerMenu} from 'react-icons/gi'
@@ -72,7 +72,7 @@ const Navbar = () => {
        <div onClick={ShowAndHideNavbar} className='menu_close-btn'>
         <RxCross1 color='black' size={20}/>
        </div>
-      <ul>
+      <ul onClick={ShowAndHideNavbar}>
         <div className='nav_items_dropDown-NavItem'>
           <li>
             <Link to='/Lawyers/practise-areas'>Practice areas</Link>

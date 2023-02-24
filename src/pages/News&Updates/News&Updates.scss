@@ -53,3 +53,23 @@
         }
     }
 }
+@media (max-width:425px) {
+    .news_header {
+        .news {
+            .news_container {
+                 flex-direction: column;
+                 .news_container-content {
+                    margin-bottom: 20px;
+                 }
+                 .news_container-blogs {
+                    .newsBlog_container-content-card {
+                        width: 100%;
+                        figure {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

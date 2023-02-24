@@ -67,3 +67,33 @@
         }
     }
 }
+@media (max-width:425px) {
+     .container {
+        width: 100%;
+     }
+     .contact_us_header {
+        .contact_us {
+            .contact_us_container {
+                .contact_us_container-content {
+                   h1 {
+                    font-size: 40px;
+                    padding: 10px;
+                   }          
+                }
+            }
+         }
+     }
+     .contact_form {
+        .contact_form_container {
+            .contact_form_container-img {
+                width: 100%;
+                figure {
+                    width: 100%;
+                    img  {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+     }
+}
