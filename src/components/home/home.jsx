@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../header/header'
-import Navbar from '../navbar/navbar'
 import "./home.scss"
 import lawyerGirl from "../../assets/lawyer-girl.jpg"
 import CompanyLogoe1 from "../../assets/FCBA-logo.png"
@@ -11,7 +10,6 @@ import CompanyLogoe5 from "../../assets/california_attorney_association.png"
 import CourtHammer from "../../assets/hammer.jpg"
 import HoldingBook from "../../assets/holding-book.jpg"
 import Signing from "../../assets/siging-paper.jpg"
-import Footer from '../footer/footer'
 import Button from '../button/button'
 import WhyUs from '../whyUs/WhyUs'
 import LawyersInNumbers from '../lawyerInNumbers/LawyersInNumbers'
@@ -19,7 +17,7 @@ const Home = () => {
   return (
     <div className='landingPage'>
     <div className='home'>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Header/>
     </div>
     {/* PRACTICALS AREA CONTIANER */}
@@ -63,7 +61,7 @@ const Home = () => {
 
     {/* WHY US CONTIANER */}
     
-    <WhyUs/>
+    <WhyUs paragraph1="Our lawyers are dedicated to ensuring that you get personal attention and top-quality service for all of your legal concerns. We care about you."/>
 
 
     {/* 
@@ -146,7 +144,7 @@ We know it can be hard to find the right law firm. That's why we offer all new c
           </div>
         </div>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }

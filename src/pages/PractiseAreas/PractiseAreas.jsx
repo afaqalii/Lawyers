@@ -1,8 +1,6 @@
 import React from 'react'
 import "./PractiseArea.scss"
 import Button from '../../components/button/button'
-import Footer from '../../components/footer/footer'
-import Navbar from '../../components/navbar/navbar'
 import HoldingSon from "../../assets/holding-son.jpg"
 import HoldingPassports from "../../assets/holding-passports.jpg"
 import RealEstateBuilding from "../../assets/real-estate-building.jpg"
@@ -11,7 +9,6 @@ const PractiseAreas = () => {
   return (
     <>
         <div className="practise_areas_header">
-           {/* <Navbar/> */}
            <div className="practise_areas_heading">
             <div className="practise_areas_heading_container container">
                <div className="practise_areas_heading_container-content">
@@ -42,7 +39,7 @@ const PractiseAreas = () => {
                     Our family lawyers are experts in this field and will ensure they do everything so that you get the very best possible arrangement for your needs.
                 </p>
                 <div className="btn">
-                    <Button content="Book a Consultation" color="white" bg="black"/>
+                    <Button content="Book a Consultation" color="black" bg="white"/>
                 </div>
             </div>
             </div>
@@ -61,7 +58,7 @@ const PractiseAreas = () => {
                 We have years of experience in real estate agreements of all kinds and provide personalised, specialized attention for every situation. We focus on protecting your best interesting, up to and beyond the closing date.
                 </p>
                 <div className="btn">
-                    <Button content="Book a Consultation" color="white" bg="black"/>
+                    <Button content="Book a Consultation" color="black" bg="white"/>
                 </div>
                 </div>
             </div>
@@ -84,14 +81,14 @@ const PractiseAreas = () => {
                     Our family lawyers are experts in this field and will ensure they do everything so that you get the very best possible arrangement for your needs.
                 </p>
                 <div className="btn">
-                    <Button content="Book a Consultation" color="white" bg="black"/>
+                    <Button content="Book a Consultation" color="black" bg="white"/>
                 </div>
             </div>
             </div>
             </div>
             </div>
         </div>
-        <Footer/>
+        {/* <Footer/> */}
     </>
   )
 }

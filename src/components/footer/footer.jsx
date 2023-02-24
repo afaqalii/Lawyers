@@ -2,6 +2,7 @@ import React from 'react'
 // import BalanceSharpIcon from '@mui/icons-material/BalanceSharp';
 import {FaFacebookF,FaBalanceScale } from 'react-icons/fa';
 import {BsTwitter, BsLinkedin} from "react-icons/bs"
+import { Link } from 'react-router-dom';
 import "./footer.scss"
 import Button from '../button/button';
 const Footer = () => {
@@ -21,20 +22,20 @@ const Footer = () => {
         <div className="footer_content_container">
             <div className="footer_content_container-links">
                 <div className="footer_content_contianer-links-box">
-                    <h4>Lawyers.</h4>
+                    <h4><Link to="/Lawyers">Lawyers.</Link></h4>
                 </div>
                 <div className="footer_content_contianer-links-box">
                     <h4>Practice Area</h4>
                     <ul>
-                        <li><a href="#">Family Law</a></li>
-                        <li><a href="#">RealEstate Law</a></li>
-                        <li><a href="#">Immigration Law</a></li>
+                        <li><Link to="/Lawyers/practise-areas">Family Law</Link></li>
+                        <li><Link to="/Lawyers/practise-areas">RealEstate Law</Link></li>
+                        <li><Link to="/Lawyers/practise-areas">Immigration Law</Link></li>
                     </ul>
                 </div>
                 <div className="footer_content_contianer-links-box menu-links">
-                    <h4><a href="#">About </a> </h4>
-                    <h4><a href="#">News & Updates </a></h4>
-                    <h4><a href="#">Contact </a></h4>
+                    <h4><Link to="/Lawyers/about-us">About </Link> </h4>
+                    <h4><Link to="/Lawyers/news-updates">News & Updates </Link></h4>
+                    <h4><Link to="/Lawyers/contact-us">Contact </Link></h4>
                 </div>
                 <div className="footer_content_contianer-links-box">
                     <h4>Business Hours</h4>

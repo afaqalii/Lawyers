@@ -16,7 +16,6 @@ const AboutUs = () => {
   return (
     <div className='landingPage'>
     <div className='about_us_page_header'>
-        <Navbar/>
         <div className='about_us'>
             <div className="about_us_container container">
                 <div className="about_us_container-content">
@@ -34,7 +33,7 @@ const AboutUs = () => {
     <WhyUs paragraph1={paragraph1}/>
     <LawyersInNumbers/>
     <CompanyCopy/>
-    <Footer/>
+    {/* <Footer/> */}
     </div>
     )
 }

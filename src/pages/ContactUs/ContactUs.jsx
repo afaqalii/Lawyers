@@ -11,7 +11,7 @@ const ContactUs = () => {
   return (
     <div>
         <div className="contact_us_header">
-        <Navbar/>
+        {/* <Navbar/> */}
         <div className="contact_us">
             <div className="contact_us_container container">
                 <div className="contact_us_container-content">
@@ -40,7 +40,7 @@ const ContactUs = () => {
                 </div>
             </div>
         </div>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }

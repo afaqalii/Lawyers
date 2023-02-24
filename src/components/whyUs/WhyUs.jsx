@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../button/button'
 import "../home/home.scss"
+import { Link } from 'react-router-dom'
 
 const WhyUs = ({paragraph1,paragraph2}) => {
   return (
@@ -12,7 +13,7 @@ const WhyUs = ({paragraph1,paragraph2}) => {
         <p>{paragraph1} </p>          
         <div>
          <p>{paragraph2}</p>
-        <Button content="More About us" padding="1em 2em" bg="white" color="black"/>
+       <Link to="/Lawyers/about-us"> <Button content="More About us" padding="1em 2em" bg="white" color="black"/></Link>
         </div>
         </div>
       </div>

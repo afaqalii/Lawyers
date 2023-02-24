@@ -10,9 +10,19 @@ nav {
     -moz-transition: .3s;
     -ms-transition: .3s;
     -o-transition: .3s;
+    background-color: black;
     .nav_logo_items  {
         display: flex;
         align-items: center;
+        color: $white;
+        .nav_logo {
+            h2 {
+                a { 
+                    font-size: 24px;
+                    color: white;
+                }
+            }
+        }
     }
 
     .nav_items {
@@ -104,6 +114,17 @@ nav {
     background-color: $white;
     z-index: 2;
     top: 0;
+    .nav_logo_items  {
+        color: black;
+        .nav_logo {
+            h2 {
+                a { 
+                    font-size: 24px;
+                    color: $darkGray;
+                }
+            }
+        }
+    }
     h2 {
         color: $darkGray;
     }
@@ -168,6 +189,7 @@ nav {
                       li {
                          a {
                             font-size: 1.2em;
+                            color: $darkGray;
                          }
                       }
                     .nav_items_dropDown-NavItem {

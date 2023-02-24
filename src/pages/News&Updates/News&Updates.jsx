@@ -10,7 +10,7 @@ const NewsAndUpdates = () => {
   return (
     <div>
         <div className="news_header">
-            <Navbar/>
+            {/* <Navbar/> */}
             <div className="news">
                 <div className="news_container container">
                     <div className="news_container-content">
@@ -42,7 +42,7 @@ const NewsAndUpdates = () => {
                 </div>
             </div>
         </div>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }

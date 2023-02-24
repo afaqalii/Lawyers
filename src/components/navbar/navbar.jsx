@@ -5,6 +5,7 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import {BsTwitter, BsLinkedin} from "react-icons/bs"
 import {RxCross1} from "react-icons/rx"
 import "./navbar.scss"
+import {Link} from "react-router-dom"
 
 const Navbar = () => {
 
@@ -29,13 +30,13 @@ const Navbar = () => {
     <nav className={fixedNavbar ? "navbar":""}>
       <div className='nav_logo_items'>
      <div className="nav_logo">
-      <h2>Lawyers.</h2>
+      <h2><Link to='/Lawyers'>Lawyers.</Link></h2>
      </div>
      <div className="nav_items">
       <ul>
         <div className='nav_items_dropDown-NavItem'>
           <li>
-            <a href='#'>Practice areas</a>
+            <Link to='/Lawyers/practise-areas'>Practice areas</Link>
             <BsChevronDown className='arrowDown'/>
             <BsChevronUp  className='arrowUp'/>
             </li> 
@@ -44,14 +45,14 @@ const Navbar = () => {
             <span></span>
           </span>
           <ul className='nav_items_dropDown' >
-            <li><a href='#'>Family Law</a></li>
-            <li><a href='#'>RealEstate Law</a></li>
-            <li><a href='#'>Immigration Law</a></li>
+            <li><Link to='/Lawyers/practise-areas'>Family Law</Link></li>
+            <li><Link to='/Lawyers/practise-areas'>RealEstate Law</Link></li>
+            <li><Link to='/Lawyers/practise-areas'>Immigration Law</Link></li>
           </ul>
         </div>
-        <li><a href='#'>About</a></li>
-        <li><a href='#'>News & Updates</a></li>
-        <li><a href='#'>Contact</a></li>
+        <li><Link to='/Lawyers/about-us'>About</Link></li>
+        <li><Link to='/Lawyers/news-updates'>News & Updates</Link></li>
+        <li><Link to='/Lawyers/contact-us'>Contact</Link></li>
       </ul>
      </div>
      </div>
@@ -74,18 +75,18 @@ const Navbar = () => {
       <ul>
         <div className='nav_items_dropDown-NavItem'>
           <li>
-            <a href='#'>Practice areas</a>
+            <Link to='/Lawyers/practise-areas'>Practice areas</Link>
             <BsChevronDown color='black' className='arrowDown'/>
             </li> 
           <ul className='nav_items_dropDown' >
-            <li><a href='#'>Family Law</a></li>
-            <li><a href='#'>RealEstate Law</a></li>
-            <li><a href='#'>Immigration Law</a></li>
+            <li><Link to='/Lawyers/practise-areas'>Family Law</Link></li>
+            <li><Link to='/Lawyers/practise-areas'>RealEstate Law</Link></li>
+            <li><Link to='/Lawyers/practise-areas'>Immigration Law</Link></li>
           </ul>
         </div>
-        <li><a href='#'>About</a></li>
-        <li><a href='#'>News & Updates</a></li>
-        <li><a href='#'>Contact</a></li>
+        <li><Link to='/Lawyers/about-us'>About</Link></li>
+        <li><Link to='/Lawyers/news-updates'>News & Updates</Link></li>
+        <li><Link to='/Lawyers/contact-us'>Contact</Link></li>
       </ul>
      </div>
       <div className="nav_footer">

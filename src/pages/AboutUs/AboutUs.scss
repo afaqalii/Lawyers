@@ -11,15 +11,14 @@ footer {
     }
 
 }
-
+.landingPage {
 .about_us_page_header {
-    background-color: $darkGray;
     color: $white;
     .about_us {
         display: flex;
         justify-content: center;
-        margin-top:2em;
-        padding: 2em 0;
+        padding: 4em 0;
+        background-color: black;
         .about_us_container {
             .about_us_container-content {
                 padding: 2em 0;
@@ -44,4 +43,5 @@ footer {
             object-fit: cover;
         }
     }
+}
 }

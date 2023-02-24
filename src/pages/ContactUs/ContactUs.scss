@@ -7,13 +7,12 @@
 }
 
 .contact_us_header {
-    background-color: $darkGray;
+    background-color: black;
     color: $white;
     .contact_us {
         display: flex;
         justify-content: center;
-        margin-top: 2em;
-        padding: 2em 0;
+        padding: 4em 0;
         .contact_us_container {
             .contact_us_container-content {
                 padding: 2em 0;

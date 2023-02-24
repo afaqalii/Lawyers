@@ -1,6 +1,7 @@
 import React from 'react'
 import "../../assets/variables.scss";
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Button = ({content, bg, padding, color}) => {
     
@@ -21,9 +22,12 @@ const Button = ({content, bg, padding, color}) => {
     `;
 
   return (
+    <Link to='/Lawyers/contact-us'>
     <Button>
         {content}
     </Button>
+    </Link>
+    
   )
 }
 
