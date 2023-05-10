@@ -5,12 +5,14 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import {BsTwitter, BsLinkedin} from "react-icons/bs"
 import {RxCross1} from "react-icons/rx"
 import "./navbar.scss"
+import { useLocation } from 'react-router-dom'
 import {Link} from "react-router-dom"
 
 const Navbar = () => {
 
   const [fixedNavbar, setfixedNavbar] = useState(false)
   const [ToggleNavbar, setToggleNavbar] = useState(false)
+  const location = useLocation();
 
   const ConvertingNavbarToFixed = () => {
        window.scrollY >= 100 ? setfixedNavbar(true) : setfixedNavbar(false)
@@ -18,6 +20,9 @@ const Navbar = () => {
   const ShowAndHideNavbar = () => {
     setToggleNavbar(prevState => !prevState)
   }
+  useEffect(() => {
+     window.scrollTo(0,0)
+  },[location])
   useEffect(() => {
     window.addEventListener("scroll", ConvertingNavbarToFixed)
     
